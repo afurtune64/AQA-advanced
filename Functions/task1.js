@@ -1,20 +1,21 @@
 // function declaration
 
 function squareDecl(width, height) {
-  console.log(width * height);
+  return width * height;
 }
 
-squareDecl(2, 4);
+console.log(squareDecl(2, 4));
 
 // function expression
 const squareExp = function (width, height) {
-  console.log(width * height);
+  return width * height;
 };
 
-squareExp(3, 5);
+console.log(squareExp(3, 5));
 
 // arrow function
 let squareArr = (width, height) => {
-  console.log(width * height);
+  return width * height;
 };
-squareArr(1, 9);
+
+console.log(squareArr(1, 9));
