@@ -13,6 +13,6 @@ for (let i = 0; i < numbers.length; i++) {
     zeroCount++;
   }
 }
-console.log("Кількість позитивних чисел:", positiveCount);
-console.log("Кількість негативних чисел:", negativeCount);
-console.log("Кількість нулів:", zeroCount);
+console.log('Кількість позитивних чисел:', positiveCount);
+console.log('Кількість негативних чисел:', negativeCount);
+console.log('Кількість нулів:', zeroCount);

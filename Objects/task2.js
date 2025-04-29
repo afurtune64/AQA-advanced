@@ -1,6 +1,6 @@
 let book = {
-  title: "Harry Potter and Philosopher`s Stone",
-  author: "J. K. Rowling",
+  title: 'Harry Potter and Philosopher`s Stone',
+  author: 'J. K. Rowling',
   year: 1997,
 };
 

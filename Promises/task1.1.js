@@ -7,4 +7,4 @@ async function saySmth(text, miliseconds) {
   console.log(text);
 }
 
-saySmth("some new text", 2000);
+saySmth('some new text', 2000);

@@ -4,4 +4,4 @@ const sum = arrayNumbers.reduce((accumulator, currentValue) => {
   return accumulator + currentValue;
 }, initialValue);
 
-console.log("Сума елементів масиву:", sum);
+console.log('Сума елементів масиву:', sum);

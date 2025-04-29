@@ -18,22 +18,22 @@ class Book {
   }
 
   set title(value) {
-    if (typeof value !== "string" || value.trim() === "") {
-      throw new Error("Назва книги має бути рядком");
+    if (typeof value !== 'string' || value.trim() === '') {
+      throw new Error('Назва книги має бути рядком');
     }
     this._title = value;
   }
 
   set author(value) {
-    if (typeof value !== "string" || value.trim() === "") {
-      throw new Error("Ім’я автора має бути рядком");
+    if (typeof value !== 'string' || value.trim() === '') {
+      throw new Error('Ім’я автора має бути рядком');
     }
     this._author = value;
   }
 
   set year(value) {
     if (!Number.isInteger(value) || value < 0) {
-      throw new Error("Рік має бути додатнім цілим числом");
+      throw new Error('Рік має бути додатнім цілим числом');
     }
     this._year = value;
   }
@@ -42,7 +42,7 @@ class Book {
     console.log(`Назва: ${this.title}`);
     console.log(`Автор: ${this.author}`);
     console.log(`Рік видання: ${this.year}`);
-    console.log("          ");
+    console.log('          ');
   }
 
   static findOldestBook(books) {
@@ -52,13 +52,13 @@ class Book {
   }
 }
 // let book1 = new Book(
-//   "Harry Potter and the Philosopher's Stone",
-//   "J. K. Rowling",
+//   'Harry Potter and the Philosopher's Stone',
+//   'J. K. Rowling',
 //   1997
 // );
 // let book2 = new Book(
-//   "Harry Potter and the Chamber of Secrets",
-//   "J. K. Rowling",
+//   'Harry Potter and the Chamber of Secrets',
+//   'J. K. Rowling',
 //   1998
 // );
 
