@@ -2,18 +2,18 @@ const averageGrade = 84;
 
 switch (true) {
   case averageGrade < 60:
-    console.log("Незадовільно");
+    console.log('Незадовільно');
     break;
   case averageGrade <= 70:
-    console.log("Задовільно");
+    console.log('Задовільно');
     break;
   case averageGrade <= 80:
-    console.log("Добре");
+    console.log('Добре');
     break;
   case averageGrade <= 90:
-    console.log("Дуже добре");
+    console.log('Дуже добре');
     break;
   case averageGrade <= 100:
-    console.log("Відмінно");
+    console.log('Відмінно');
     break;
 }

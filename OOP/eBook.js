@@ -1,4 +1,4 @@
-import Book from "./book.js";
+import Book from './book.js';
 
 class EBook extends Book {
   constructor(title, author, year, fileFormat) {
@@ -11,8 +11,8 @@ class EBook extends Book {
   }
 
   set fileFormat(value) {
-    if (typeof value !== "string" || value.trim() === "") {
-      throw new Error("Формат файлу має бути рядком");
+    if (typeof value !== 'string' || value.trim() === '') {
+      throw new Error('Формат файлу має бути рядком');
     }
     this._fileFormat = value;
   }
@@ -24,7 +24,7 @@ class EBook extends Book {
 
   static fromBook(bookInstance, fileFormat) {
     if (!(bookInstance instanceof Book)) {
-      throw new Error("Аргумент має бути екземпляром Book");
+      throw new Error('Аргумент має бути екземпляром Book');
     }
     return new EBook(
       bookInstance.title,
@@ -37,10 +37,10 @@ class EBook extends Book {
 
 export default EBook;
 // let EBook1 = new EBook(
-//   "Harry Potter and the Philosopher's Stone",
-//   "J. K. Rowling",
+//   'Harry Potter and the Philosopher's Stone',
+//   'J. K. Rowling',
 //   1997,
-//   "EBUP"
+//   'EBUP'
 // );
 
 // EBook1.printInfo();
